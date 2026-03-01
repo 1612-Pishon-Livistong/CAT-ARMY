@@ -34,17 +34,9 @@ body {
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     font-weight: 800;
     font-size: 20px;
     color: gold;
-}
-
-.brand img {
-    width: 40px;
-    height: 40px;
 }
 
 nav a {
@@ -61,12 +53,12 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 120px;
     background:
         radial-gradient(circle at 20% 30%, rgba(255,215,0,0.15), transparent 40%),
         radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05), transparent 40%),
@@ -77,8 +69,14 @@ nav a:hover {
     max-width: 800px;
 }
 
+.hero-logo {
+    width: 320px;
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
 .hero h1 {
-    font-size: 58px;
+    font-size: 48px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -122,7 +120,7 @@ nav a:hover {
 }
 
 .section h2 {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 

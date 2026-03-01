@@ -1,45 +1,97 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f0f0f;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
     color: white;
 }
 
-header {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background: transparent;
+    padding: 25px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    color: gold;
 }
 
 nav a {
-    color: gold;
-    margin: 0 15px;
+    color: white;
+    margin-left: 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: white;
+    color: gold;
 }
 
-.section {
-    padding: 40px;
-    text-align: center;
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at center, #111 0%, #000 70%);
+    text-align: left;
+    padding-top: 100px;
 }
 
-.card {
-    background-color: #1c1c1c;
-    border: 1px solid gold;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+.hero h2 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ccc;
 }
 
 button {
-    background-color: gold;
-    color: black;
-    padding: 10px 15px;
+    background: gold;
     border: none;
-    font-weight: bold;
+    padding: 15px 30px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d4af37;
+}
+
+.about-preview {
+    padding: 120px 0;
+    background-color: #111;
+}
+
+.about-preview h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-preview p {
+    color: #aaa;
+    line-height: 1.6;
 }

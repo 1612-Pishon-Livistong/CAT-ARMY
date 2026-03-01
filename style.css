@@ -93,7 +93,7 @@ nav a:hover{
     box-shadow:0 15px 30px rgba(245,197,66,0.4);
 }
 
-/* CIRCLE ANIMATION */
+/* CIRCLE */
 .hero-right{
     position:relative;
 }
@@ -107,7 +107,6 @@ nav a:hover{
     align-items:center;
     justify-content:center;
     position:relative;
-    animation:rotate 20s linear infinite;
 }
 
 .circle::before{
@@ -120,14 +119,24 @@ nav a:hover{
     animation:pulse 3s ease-in-out infinite;
 }
 
+.circle::after{
+    content:"";
+    position:absolute;
+    width:460px;
+    height:460px;
+    border-radius:50%;
+    border:1px solid rgba(245,197,66,0.1);
+    animation:rotate 20s linear infinite;
+}
+
 .floating-cat{
     width:220px;
     animation:float 4s ease-in-out infinite;
 }
 
-/* WHY SECTION */
+/* WHY */
 .why{
-    padding:120px 80px;
+    padding:140px 80px;
     text-align:center;
 }
 

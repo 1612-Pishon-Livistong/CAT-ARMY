@@ -10,18 +10,22 @@ body {
     color: white;
 }
 
+/* Layout */
 .container {
     width: 85%;
     max-width: 1200px;
     margin: auto;
 }
 
+/* Navbar */
 .navbar {
-    background: transparent;
-    padding: 25px 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -47,13 +51,15 @@ nav a:hover {
     color: gold;
 }
 
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background: radial-gradient(circle at center, #111 0%, #000 70%);
-    text-align: left;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .hero h2 {
@@ -71,27 +77,49 @@ nav a:hover {
 button {
     background: gold;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 35px;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
     transition: 0.3s;
+    font-size: 16px;
 }
 
 button:hover {
     background: #d4af37;
+    transform: translateY(-3px);
 }
 
-.about-preview {
+/* Sections */
+.about-preview,
+.mission,
+.cats {
     padding: 120px 0;
     background-color: #111;
+    text-align: center;
 }
 
-.about-preview h3 {
+.about-preview h3,
+.mission h3,
+.cats h3 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.about-preview p {
+.about-preview p,
+.mission p,
+.cats p {
     color: #aaa;
     line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
 }
